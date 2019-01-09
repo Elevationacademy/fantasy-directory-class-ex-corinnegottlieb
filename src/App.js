@@ -14,7 +14,7 @@ class App extends Component {
     this.state = {
       wizards: [
         { name: "Merlin", power: "Wisdom", other: "Helped King Arthur", imgUrl: "https://tinyurl.com/merlin-image" },
-        { name: "Morgana Le Fay", power: "Forces of Nature", other: "Trapped Merlin in a cave for eternity", imgUrl: "https://tinyurl.com/morgana-image" },
+      { name: "Morgana Le Fay", power: "Forces of Nature", other: <span>Trapped {<Link to={`/directory/wizards/Merlin`}>Merlin</Link>} in a cave for eternity`</span>, imgUrl: "https://tinyurl.com/morgana-image" },
         { name: "Gandalf", power: "Plot Convenience", other: "Once broke a bridge", imgUrl: "https://tinyurl.com/gandalf-img" }
       ],
       bestiary: [
