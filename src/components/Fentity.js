@@ -3,7 +3,10 @@ import '../styles/fentity.css'
 
 
 class Fentity extends Component {
+ 
     render() {
+        const name = this.props.match.params.name
+        const fentity = this.props.state[this.props.match.params.fentities].find(f=> f.name ===name)
         return (
             <div id="creature-container">
                 <h1>{fentity.name}</h1>
